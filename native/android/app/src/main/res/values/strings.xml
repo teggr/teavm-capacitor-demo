@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Java Repository Explorer</string>
+    <string name="title_activity_main">Java Repository Explorer</string>
+    <string name="package_name">dev.teggr.javarepoexplorer</string>
+    <string name="custom_url_scheme">dev.teggr.javarepoexplorer</string>
+</resources>
