@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Java Repository Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="main()">
+  <main>
+    <h1>Java Repository Explorer</h1>
+
+    <form id="form">
+      <label for="username">GitHub username</label>
+      <div class="row">
+        <input id="username" type="text" value="teggr" autocapitalize="none" autocomplete="off" spellcheck="false">
+        <button id="load" type="submit">Load repositories</button>
+      </div>
+    </form>
+
+    <p id="loading" role="status" hidden>Loading&hellip;</p>
+    <div id="error" role="alert" hidden>
+      <p id="error-message"></p>
+      <button id="retry" type="button">Retry</button>
+    </div>
+    <p id="empty" hidden>This user has no public repositories.</p>
+    <ul id="repos" hidden></ul>
+
+    <section aria-labelledby="runtime-heading">
+      <h2 id="runtime-heading">Runtime information</h2>
+      <p id="runtime-status">Checking&hellip;</p>
+      <dl id="runtime-details" hidden>
+        <dt>Platform</dt><dd id="platform"></dd>
+        <dt>OS version</dt><dd id="os-version"></dd>
+        <dt>Model</dt><dd id="model"></dd>
+      </dl>
+    </section>
+  </main>
+
+  <!-- Compiled from Java by TeaVM; exposes main() -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "appId": "dev.teggr.javarepoexplorer",
+  "appName": "Java Repository Explorer",
+  "webDir": "../target/web"
+}
