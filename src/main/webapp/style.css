@@ -1,0 +1,71 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1f2328;
+  background: #f6f8fa;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+
+h1 { font-size: 1.4rem; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.1rem; margin-top: 2rem; }
+
+label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+
+.row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+input[type="text"] {
+  flex: 1 1 10rem;
+  min-width: 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #0969da;
+  border: 0;
+  border-radius: 6px;
+}
+
+button:disabled { opacity: 0.5; }
+
+[hidden] { display: none !important; }
+
+#loading { font-style: italic; }
+
+#error {
+  background: #ffebe9;
+  border: 1px solid #ff8182;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+}
+
+#error p { margin: 0 0 0.5rem; }
+
+#repos { list-style: none; padding: 0; margin: 1rem 0 0; }
+
+#repos li {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.repo-name { margin: 0 0 0.25rem; font-size: 1.05rem; color: #0969da; overflow-wrap: anywhere; }
+.repo-description { margin: 0 0 0.5rem; }
+.repo-meta { margin: 0; display: flex; gap: 0.75rem; flex-wrap: wrap; font-size: 0.85rem; color: #57606a; }
+.language { font-weight: 600; }
+
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; }
+dt { font-weight: 600; }
+dd { margin: 0; }

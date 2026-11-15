@@ -1,0 +1,19 @@
+{
+  "name": "java-repository-explorer-native",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Capacitor packaging layer for the TeaVM-compiled Java Repository Explorer",
+  "scripts": {
+    "sync": "cap sync android",
+    "open": "cap open android",
+    "run:android": "cap run android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/core": "8.6.0",
+    "@capacitor/device": "8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0"
+  }
+}

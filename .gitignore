@@ -1,0 +1,14 @@
+target/
+node_modules/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+native/android/.gradle/
+native/android/build/
+native/android/app/build/
+native/android/local.properties
+native/android/capacitor-cordova-android-plugins/
+native/android/app/src/main/assets/public/
+native/android/app/src/main/assets/capacitor.config.json
+native/android/app/src/main/assets/capacitor.plugins.json
